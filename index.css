@@ -1,27 +1,36 @@
-
 /* Reset some default styles for the page */
-body, p {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    
+body,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url('manager.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Optional: Keeps the background fixed */
+  /* Set background properties */
+  background-color: black;
+  background-image: url("manager.gif"); /* Ensure the path to your image is correct */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Keeps the background fixed */
 }
-
 
 /* Style the h1 element */
 h1 {
-    background: white;
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+  /* Use white background with text clipped to it */
+  background: white;
+  color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 
+  /* Fallback color in case background-clip is not supported */
+  /* This color will be used if background-clip is not supported */
+  /* Adjust this color as needed */
+  color: white;
+}
+
+/* Optional: Apply specific styles to paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
